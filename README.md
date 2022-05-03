@@ -1,5 +1,5 @@
 # myCV-API
-An API for my Resume. Where I can make calls and showcase my learning. 
+An API for my Resume. Here I can make calls and showcase my learning. 
 
 API availble on https://myCV.davidlindblom.repl.co
 
