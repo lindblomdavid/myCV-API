@@ -19,8 +19,6 @@ def handle_request():
     return "You can query the API using by adding:  '/?input=' followed by the queryparameter. Example: '/?input=education' for education. Current options are [education, experience, other]"
   
 
-
-
 def getEducation():
   education_keys = db.prefix("ED")
   data_set = {}
@@ -30,8 +28,6 @@ def getEducation():
    
   return json.dumps(data_set)
   
-
-
     
 def getExperience():
   experience_keys = db.prefix("EX")
@@ -49,26 +45,6 @@ def getOther():
     data_set[key] = {"Description": db[key][1]}
 
   return json.dumps(data_set)
-
-
-
-print(getOther())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
